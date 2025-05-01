@@ -19,13 +19,13 @@ st.title("Milk Quality")
 st.write("Menentukan kualitas Susu.")
 
 # Form input pengguna
-P = st.number_input("Kandungan pH (pH)", min_value=0.0, max_value=10.0, value=5.0)
-T = st.number_input("Kandungan Temperature (P)", min_value=0, max_value=70, value=30)
-taste = st.number_input("Kandungan Taste (K)", min_value=0, max_value=1, value=0)
-odor = st.number_input("Odor (°C)", min_value=0, max_value=1, value=0)
-fat = st.number_input("Fat (%)", min_value=0, max_value=1, value=0)
+P = st.number_input("Kandungan pH ", min_value=0.0, max_value=10.0, value=5.0)
+T = st.number_input("Kandungan Temperature ", min_value=0, max_value=70, value=30)
+taste = st.number_input("Kandungan Taste ", min_value=0, max_value=1, value=0)
+odor = st.number_input("Odor ", min_value=0, max_value=1, value=0)
+fat = st.number_input("Fat ", min_value=0, max_value=1, value=0)
 turbidity = st.number_input("Turbidity", min_value=0, max_value=1, value=0)
-colour = st.number_input("Colour (mm)", min_value=250, max_value=270, value=255)
+colour = st.number_input("Colour ", min_value=250, max_value=270, value=255)
 
 if st.button("Hasil Kualitas Susu"):
     # Preprocessing input
